@@ -1,0 +1,16 @@
+.top{
+   background-color: #eaf6f6;
+}
+
+h1{
+    margin: 0;   /*this means that for all the h1 margin around h1 box is set to 0px
+    we can set indivisually also like margin-top:0px; like that  */
+
+
+}
+h2{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
