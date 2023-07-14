@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  padding: 5% 10%;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+ol {
+      list-style-type:decimal;
+      padding-left: 10%;
+}
+ul {
+    padding-left:10%;  /*indent for the list */
+
+    list-style-type:upper-roman;   /* circle/decimal/disc/lower roman  */
+    ;
+    list-style-position:outside;
+    line-height: 1.5;
+
+    /* Here is how we make custom start style for a list */
+    list-style-image:url('../images/checkmark.png');
+
+    /* fallback incase image is not loaded */
+    list-style: square url('../images/checkmark.png');
+}
+
+/* using this pseudo class we can make ever or odd rows color */
+ul li:nth-child(even) {
+  
+  color: red;
+
+}
+
+ /* you can set customize marker using class */
+::marker {
+  color:red;
+  font-family: fantasy;
+  font-size: 1em;
+  content: "👉";
+}
+
+li {
+  font-family: Arial, sans-serif; /* Set font family */
+  font-size: 16px; /* Set font size */
+  font-weight: bold; /* Set font weight */
+  color: #333; /* Set font color */
+  background-color: lightgray; /* Set background color */
+  background-image: url('image.png'); /* Set background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-position: left center; /* Set background image position */
+  text-align: left; /* Center-align the text */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Round the corners of the border */
+  padding: 10px; /* Set padding around the content */
+  margin-bottom: 5px; /* Set margin between list items */
+  margin-top: 10px;  
+  line-height:10px;
+
+}

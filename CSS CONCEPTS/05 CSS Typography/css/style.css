@@ -1,0 +1,26 @@
+body {
+    /* padding: 10px; */
+    padding:25%;
+    font-size: 2rem;
+}
+
+input, button {
+    font:inherit;
+} 
+
+
+
+p {
+    /* text-transform: uppercase; */
+       /* text-decoration:underline ; */
+       /* text-align: justify; */
+       /* text-indent: 2em;    */ 
+      /* line-height: 1.5; */
+      /* letter-spacing: .1em; */
+      /* word-spacing: .5em;    */
+      /* font-weight: bolder; */
+      /* font-size: .5em; */
+      /* font-family: monospace; */
+      
+}
+
