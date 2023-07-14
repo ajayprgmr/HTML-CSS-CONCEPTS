@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complexform</title>
+</head>
+<body>
+    <h1>Complex Form</h1>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="usernmae">Name</label>
+        <input type="text" id="username" name="name">
+        <label for="email-id">Email</label>
+        <input type="email" id="email-id" name="email">
+        <label for="date-of-birth">Date of Birth</label>
+        <input type="date" id="date-of-birth" name="dob">
+        <label>Gender</label>
+        <label for="radio-1">
+            <input type="radio" id="radio-1" name="gender">
+            Male
+        </label>
+        <label for="radio-2">
+            <input type="radio" id="radio-2" name="gender">
+            Female
+        </label>
+        <label>
+            Country
+            <select>
+                <option value="op-1">India</option>
+                <option value="op-2" selected>United States</option>
+                <option value="op-3">China</option>
+                <option value="op-4">Japan</option>
+            </select>
+        </label>  
+    </fieldset>
+    <fieldset>
+        <legend>Address Street</legend>
+        <label>
+            City
+            <input type="text" id="city" name="city">
+        </label>
+        <label>
+            State
+            <input type="text" id="State" name="state">
+        </label>
+        <label>
+            Zip Code
+            <input type="text" id="city" name="city">
+        </label>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Other Information</legend>
+        <label for="commnets">
+            Comments 
+            <textarea id="comments" name="other information" rows="5"
+            cols="30" ></textarea>
+        </label>
+        <label for="tnc"> I agreee the terms of service
+            <input type="checkbox" id="tnc">
+        </label>
+    </fieldset>
+    <input type="button" value="Submit">
+</body>
+</html>
