@@ -4,3 +4,27 @@ body {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
 }
+
+.block {
+  width: 30vw;
+  height: 30vw;
+  background-color: black;
+  color: #fff;
+}
+
+.left {
+  float:left;
+  margin: 0.8rem auto .6rem .6rem;
+}
+
+.right {
+  float:right;
+  margin-left: .4rem;
+}
+section {
+  height: 34vw;
+  width: auto;
+  background-color: darkgrey;
+  border-top: solid 2px;
+}
+

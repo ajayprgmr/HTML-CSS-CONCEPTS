@@ -4,3 +4,37 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
 }
+.columns {
+     column-count:4;
+     column-width: 250px;
+     columns: 4 250px;   /* above two lines in shorthand */
+     column-rule: 3px solid #333;
+     column-gap: 10px;
+}
+.columns p {
+  margin-top: 0;
+}
+
+.columns h2 {
+  margin-top: 0;
+  color: white;
+  background-color: #333;
+  padding: 1rem;
+  break-inside: avoid;   /* break-inside:before; */
+
+
+}
+
+.quote {
+  color: #333;
+  font-size: 3rem;
+  text-align: center;
+  column-span:all;
+}
+
+.columns .quote {
+  margin-top: 2rem;
+}
+.nowrap {
+  white-space: nowrap;
+}
