@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#page {
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'hd menu menu menu'
+    'hr hr hr hr'
+    'hr hr hr hr'
+    'hr hr hr hr'
+    'main main adds img'
+    'main main adds etc'
+    'bnr bnr bnr bnr';
+  grid-template-columns: auto auto 15vw 20vw;
+  grid-template-rows: 10vh auto auto auto 10vh 10vh 10vh;
+}
+@media (max-width: 768px) {
+  #page {
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      'hd hd hd hd'
+      'hr hr hr hr'
+      'hr hr hr hr'
+      'menu main main main'
+      'menu main main main'
+      'menu bnr bnr bnr'
+      'menu etc adds img';
+    grid-template-columns: 15vw 30vw auto 10vw;
+    grid-template-rows: 10vh auto auto auto auto 13vh 12vh;
+  }
+}
+@media (max-width: 480px) {
+  #page {
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      'hd hd hd hd'
+      'menu menu menu menu'
+      'hr hr hr hr'
+      'main main main main'
+      'bnr bnr bnr bnr'
+      'adds adds adds adds'
+      'etc etc etc etc'
+      'img img img img';
+    grid-template-rows: 10vh 10vh auto auto 15vh 15vh 15vh 15vh;
+  }
+}
+
+#page > .heading {
+  color: white;
+  grid-area: hd;
+  border: 1px solid black;
+  background-color: black;
+}
+#page > .menu {
+  color: aliceblue;
+  grid-area: menu;
+  border: 1px solid black;
+  background-color: green;
+}
+#page > .hero {
+  color: rgb(231, 217, 14);
+  grid-area: hr;
+  border: 1px solid black;
+  background-color: rgb(16, 101, 213);
+}
+#page > .main {
+  color: rgb(221, 5, 73);
+  grid-area: main;
+  border: 1px solid black;
+  background-color: aquamarine;
+}
+#page > .add {
+  color: aliceblue;
+  grid-area: adds;
+  border: 1px solid black;
+  background-color: rgb(204, 123, 23);
+}
+#page > .image {
+  color: black;
+  grid-area: img;
+  border: 1px solid black;
+  background-color: blue;
+}
+#page > .extra {
+  color: red;
+  grid-area: etc;
+  border: 1px solid black;
+  background-color: burlywood;
+}
+#page > .banner {
+  color: red;
+  grid-area: bnr;
+  border: 1px solid black;
+  background-color: rgb(163, 232, 227);
+}
+#box {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
